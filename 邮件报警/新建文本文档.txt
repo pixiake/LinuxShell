@@ -1,0 +1,11 @@
+netstat -tunpl | grep 25
+postfix  dovecot
+
+ grep -v '^#' /etc/dovecot/dovecot.conf |grep -v '^$' |grep -v '#' !include conf.d/*.conf 
+
+
+crontab -e  任务计划
+
+06 06 * * * /mnt/*.sh
+
+crontab -l
